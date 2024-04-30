@@ -1,5 +1,6 @@
+Leia o readme de cada pasta para ver como executar o programa. 
 
 
-gcc -Wall -o labirinto main.c functions.c
 
-./labirinto.exe
+cli = Rodar no terminal
+allegro = Biblioteca gráfica
