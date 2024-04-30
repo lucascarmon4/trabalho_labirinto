@@ -19,9 +19,10 @@ int main() {
     printf("\nDigite a posicao inicial (x y): ");
     scanf("%d %d", &start.x, &start.y);
 
-    if (!isValidMove(&maze, start.x, start.y)) {
+    while (!isValidMove(&maze, start.x, start.y)) {
         printf("Posicao inicial invalida!\n");
-        return 1;
+        printf("Digite a posicao inicial (x y): ");
+        scanf("%d %d", &start.x, &start.y);
     }
 
     result = findExit(&maze, start);
